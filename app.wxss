@@ -1,4 +1,4 @@
-/*小程序主色调1*/
+/*小程序主色调*/
 .c{color:#0DBEC8;}
 .bg{background-color:#0DBEC8;}
 .b{border:1px solid #0DBEC8;}
