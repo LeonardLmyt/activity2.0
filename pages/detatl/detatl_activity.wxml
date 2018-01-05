@@ -1,0 +1,63 @@
+<navigator class='title_list' url='/pages/detatl/play_all'>
+  <view class='right_img'>
+    <image src='/public/images/3@2x.png '></image>
+  </view>
+  <view class='left_content'>
+    <view class='bigTitle'>{{bigTitle}}</view>
+    <view class='place'>
+      <view class='all'>
+        <image src='/public/images/icon_Location_02.png '></image>
+        <view>广州出发</view>
+      </view>
+      <view class='meny'>
+        <view>￥</view>
+        199</view>
+    </view>
+    <view class='place'>
+      <view class='all'>
+        <image src='/public/images/icon_time_02.png '></image>
+        <view>{{time}}</view>
+      </view>
+      <view class='menys'>
+        <view>￥</view>
+        199</view>
+    </view>
+  </view>
+</navigator>
+<view class='sign_list'>报名列表</view>
+<view class='details'>
+  <view class="details_sub">
+    <view class='righ_ionic'>
+      <image src='/public/images/icon_jianqu.png '></image>
+    </view>
+    <view class='details_sub_sub'>
+      <view class='name'>
+        <view>张海川</view>
+        12333322222
+      </view>
+      <view class='id'>
+        <view>身份证</view>
+        12333322111222
+      </view>
+    </view>
+  </view>
+  <view class="details_sub">
+    <view class='righ_ionic'>
+      <image src='/public/images/icon_jianqu.png '></image>
+    </view>
+    <view class='details_sub_sub'>
+      <view class='name'>
+        <view>张海川</view>
+        12333322222
+      </view>
+      <view class='id'>
+        <view>身份证</view>
+        12333322111222
+      </view>
+    </view>
+  </view>
+  <view class="add">
+      <image src='/public/images/icon_tianjia.png'></image>
+      添加其他人
+  </view>
+</view>

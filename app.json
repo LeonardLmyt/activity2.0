@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detatl/detatl_activity",
+    "pages/detatl/play_all",
+    "pages/detatl/detatl",
+    "pages/nearby/index",
+    "pages/posting/posting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "活动",
+    "navigationBarTextStyle": "black"
+  }
+}
