@@ -1,63 +1,102 @@
-<navigator class='title_list' url='/pages/detatl/play_all'>
-  <view class='right_img'>
-    <image src='/public/images/3@2x.png '></image>
-  </view>
-  <view class='left_content'>
-    <view class='bigTitle'>{{bigTitle}}</view>
-    <view class='place'>
-      <view class='all'>
-        <image src='/public/images/icon_Location_02.png '></image>
-        <view>广州出发</view>
-      </view>
-      <view class='meny'>
-        <view>￥</view>
-        199</view>
+<view class="content">
+  <navigator class='project' url='/pages/detatl/play_all'>
+    <view class='project_img'>
+      <image src='{{project.cover}}'></image>
     </view>
-    <view class='place'>
-      <view class='all'>
-        <image src='/public/images/icon_time_02.png '></image>
-        <view>{{time}}</view>
+    <view class='project_content'>
+      <view class='project_title'>{{project.title}}</view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_Location_02.png '></image>
+          <view>{{project.setout}}</view>
+        </view>
+        <view class='meny'>
+          <view>￥</view>
+          {{project.originalprice}}</view>
       </view>
-      <view class='menys'>
-        <view>￥</view>
-        199</view>
-    </view>
-  </view>
-</navigator>
-<view class='sign_list'>报名列表</view>
-<view class='details'>
-  <view class="details_sub">
-    <view class='righ_ionic'>
-      <image src='/public/images/icon_jianqu.png '></image>
-    </view>
-    <view class='details_sub_sub'>
-      <view class='name'>
-        <view>张海川</view>
-        12333322222
-      </view>
-      <view class='id'>
-        <view>身份证</view>
-        12333322111222
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_time_02.png '></image>
+          <view>{{project.time}}</view>
+        </view>
+        <view class='money'>
+          <view>¥</view>
+          {{project.price}}
+        </view>
       </view>
     </view>
-  </view>
-  <view class="details_sub">
-    <view class='righ_ionic'>
-      <image src='/public/images/icon_jianqu.png '></image>
-    </view>
-    <view class='details_sub_sub'>
-      <view class='name'>
-        <view>张海川</view>
-        12333322222
+  </navigator>
+  <view class='details'>
+    <view class='sign_list'>报名列表</view>
+    <view class="details_main">
+      <view class="details_sub">
+        <view class='righ_ionic'>
+          <image src='/public/images/icon_jianqu.png'></image>
+        </view>
+        <view class='details_sub_sub' wx:for="{{submit.userdata}}">
+          <view class='name'>
+            <view>{{item.name}}</view>
+            {{item.phone}}
+          </view>
+          <view class='id'>
+            <view>身份证</view>
+            {{item.idcard}}
+          </view>
+        </view>
       </view>
-      <view class='id'>
-        <view>身份证</view>
-        12333322111222
-      </view>
     </view>
-  </view>
-  <view class="add">
+    <view class="add" bindtap='toggleMask' data-show='{{toggleMask.show}}'>
       <image src='/public/images/icon_tianjia.png'></image>
       添加其他人
+    </view>
   </view>
+  <view class="clause">
+    <view class="clause_main">
+      <image src='{{submit.clause[submit.clause.show]}}' data-show='{{submit.clause.show}}' bindtap="clause"></image>
+      我已阅读并同意
+      <navigator>《免责条款》</navigator>
+    </view>
+  </view>
+</view>
+
+<view class="pay_message">
+  <view class="pay_message_left">
+    总费用：
+    <text>￥299.00</text>
+  </view>
+  <view class="pay_message_rigth">
+    <button>支付</button>
+  </view>
+</view>
+
+<view class="mask {{toggleMask.show ? toggleMask.maskbgClass : ''}}"></view>
+<view class="mask_content {{toggleMask.show ? toggleMask.maskClass : ''}}">
+  <view class="mask_content_head">
+    <view class="close" bindtap='toggleMask' data-show='{{toggleMask.show}}'>取消</view>
+    <view class="ok">确定</view>
+  </view>
+  <view class="mask_add">
+    <image src='/public/images/icon_tianjia.png'></image>
+    添加人员
+  </view>
+  <scroll-view scroll-y="{{true}}" style='height:346rpx' class="mask_details_main">
+    <view class="mask_details_sub" wx:for="{{initialuserdata}}">
+      <view class='mask_left'>
+        <image src='/public/images/fl_icon_edit.png'></image>
+      </view>
+      <view class='mask_details_sub_sub'>
+        <view class='mask_name'>
+          <view>{{item.name}}</view>
+        </view>
+        <view class='mask_id'>
+          <view>身份证</view>
+          {{item.idcard}}
+        </view>
+      </view>
+      <view class="mask_right">
+         <image src='/public/images/fl_icon_confirm_sel.png' wx:if="{{item.check}}"></image>
+         <image src='/public/images/fl_icon_confirm_nor.png' wx:else></image>
+      </view>
+    </view>
+  </scroll-view>
 </view>
