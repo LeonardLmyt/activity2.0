@@ -1,0 +1,98 @@
+<view class='big_w'>
+<view class='big_title'>
+<view class='title_list'>
+<view class='right_img'>
+<image src='/public/images/3@2x.png '></image>
+
+</view>
+<view class='left_content'>
+<view class='bigTitle'>{{bigTitle}}</view>
+<view class='place'>
+
+<view class='all'>
+<image src='/public/images/icon_Location_02.png '></image>
+<view>广州出发</view>
+</view>
+
+<view class='meny'>
+<view>￥</view>
+199</view>
+</view>
+<view class='place'>
+<view class='all'>
+<image src='/public/images/icon_time_02.png '></image>
+<view>{{time}}</view>
+</view>
+
+<view class='menys'>
+<view>￥</view>
+199</view>
+</view>
+
+</view>
+
+
+</view>
+
+</view>
+<view class='name_list'>
+<view class='nub'>
+<view class='small'>
+<view>布偶</view>
+<image src='/public/images/icon_man.png '></image>
+
+</view>
+<view class='shu'>1231233123</view>
+</view>
+<view class='id'>
+<view>身份证</view>
+<view>4418271999602221552</view>
+
+</view>
+
+</view>
+<view class='name_list'>
+<view class='nub'>
+<view class='small'>
+<view>布偶</view>
+<image src='/public/images/icon_woman.png '></image>
+
+</view>
+<view class='shu'>1231233123</view>
+</view>
+<view class='id'>
+<view>身份证</view>
+<view>4418271999602221552</view>
+
+</view>
+
+</view>
+<view class='combined'>
+<view class='com'>共2人,</view>
+<view class='people'>合计</view>
+<view class='price'>￥299</view>
+</view> 
+<view class='order'>
+<view class='state'>
+<view>订单状态</view>
+<view>已付款</view>
+</view>
+<view class='number'>
+<view>订单编号</view>
+<view>1234567894555</view>
+</view>
+
+<view class='pay'>
+<view>支付时间</view>
+<view>2017/12/02 13：23</view>
+</view>
+
+<view class='trading'>
+<view>交易单号</view>
+<view>123456789555</view>
+</view>
+
+</view> 
+
+
+</view>

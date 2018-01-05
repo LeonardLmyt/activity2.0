@@ -1,0 +1,31 @@
+{
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wxbf05707467d24004",
+	"projectname": "footmark2.0--%E5%BC%80%E5%8F%91%E7%89%88",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "detatl_activity",
+					"pathName": "pages/detatl/detatl_activity"
+				}
+			]
+		}
+	}
+}

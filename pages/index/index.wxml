@@ -1,0 +1,171 @@
+<view class='big_warp'>
+<view class='warp'>
+<image class='big_img' src='/public/images/11@2x.png  '>
+</image>
+<view class='warp_conten'>
+<view class='wapr_name'>寻觅云端上的文人国度 尼泊尔徒步</view>
+<view class='warp_list'>12/17广州出发
+<view class='point'></view>
+<text class='meny'>450名额</text>
+<view class='point'></view>
+<text class='meny'>￥299</text>
+</view>
+<view class='place'>
+<view class='small_place'>
+<image src='/public/images/location@2x.png  '></image>
+<view class='place_name'>{{place_name}}</view>
+</view>
+<view class='input'>
+<image src='/public/images/search@2x.png  '></image>
+<input placeholder='搜索目的地、玩法'></input>
+</view>
+
+</view>
+</view>
+
+</view>
+
+<view class='select'>
+<image src='/public/images/selected@2x.png '></image>
+<view class='select_activities'>{{select_activities}}</view>
+</view>
+<navigator url='/pages/detatl/detatl'>
+<view class='select_img'>
+<image src='/public/images/10@2x.png '></image>
+<view class='set_out'>{{set_out}}</view>
+</view>
+</navigator>
+<view class='title'>{{tite}}</view>
+
+
+<view class='big'>
+<view class='time'>
+<view>12/12</view>
+<view class='dian'></view>
+<view>450人浏览</view>
+</view>
+<view class='menys'>
+<view>￥</view>
+<view>299</view>
+
+</view>
+</view>
+
+
+
+<view class='list_all'>
+<view class='midden'>
+<view class='right'>
+<image src='/public/images/3@2x.png  '></image>
+<view class='di'>{{di}}</view>
+</view>
+<view class='left'>
+<view class='content'>{{content}}</view>
+<view class='all_time'>
+<view class='all'>
+<view>12/12</view>
+<view class='dian'></view>
+<view>450人浏览</view>
+</view>
+<view class='men'>
+<view class='meny_small'>￥</view>
+<view class='meny_big'>299</view>
+</view>
+
+</view>
+</view>
+
+</view>
+
+
+</view>
+<view class='list_all'>
+<view class='midden'>
+<view class='right'>
+<image src='/public/images/3@2x.png '></image>
+<view class='di'>{{di}}</view>
+</view>
+<view class='left'>
+<view class='content'>{{content}}</view>
+<view class='all_time'>
+<view class='all'>
+<view>12/12</view>
+<view class='dian'></view>
+<view>450人浏览</view>
+</view>
+<view class='men'>
+<view class='meny_small'>￥</view>
+<view class='meny_big'>299</view>
+</view>
+
+</view>
+</view>
+
+</view>
+
+
+</view>
+
+<view class='shuffling'>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+<view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view><view class='shuffing_img'>
+<image src='/public/images/4@2x.png'></image>
+<view class='shuffling_name'>
+<view class='chinese'>西藏</view>
+<view class='english'>Tibet</view>
+</view>
+</view>
+
+</view>
+
+
+
+
+
+</view>
+
+<!-- public -->
+<import src="/public/public.wxml" />
+<template is="footer" />
+<template is="layerError" data="{{layer}}" />
+<template is="paste" data="{{detail,animationData}}" />
