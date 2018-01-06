@@ -1,0 +1,17 @@
+.search{width: 100%;height: 98rpx;}
+.search_input{display: -webkit-box;display: box;border-bottom: 2rpx solid red;width: 90%;
+margin: 0 auto;
+padding: 26rpx 0 20rpx 0;
+}
+.search_input image{width: 34rpx;height: 34rpx;margin-right: 20rpx;}
+.text{width: 500rpx;font-size: 32rpx;}
+.home{background: #F7F8FB;padding: 40rpx 0 20rpx 44rpx;font-size: 28rpx;color: #888;}
+.address_warp{padding: 0 0 0 30rpx;background: #F7F8FB;}
+.address{display: inline-block;background: white;width: auto;height: 76rpx;line-height: 76rpx;text-align: center;border-radius: 4rpx;font-size: 30rpx;color: #101010;padding: 0 20rpx;min-width: 150rpx;
+
+}
+.all_home{display: -webkit-box;display: box;background: #F7F8FB;word-wrap:break-word}
+.row_home{display: inline-block;background: white;width: auto;height: 76rpx;line-height: 76rpx;text-align: center;border-radius: 4rpx;font-size: 30rpx;color: #101010;padding: 0 20rpx;min-width: 150rpx;margin-left: 20rpx;margin-bottom: 40rpx;margin-right: 20rpx}
+.letter{background: #F7F8FB;padding: 30rpx 0 10rpx 44rpx;font-size: 28rpxl;color: #888;}
+.details{width: 100%;height: 88rpx;padding-left: 44rpx;line-height: 88rpx;color: #0d0d0d;font-size: 32rpx;border-bottom: 2rpx solid #F7F8FB;}
+.right_list{position: fixed;right: 1%;top: 9%;line-height: 40rpx;color: #ff5a0e;font-size: 26rpx;text-align: center}

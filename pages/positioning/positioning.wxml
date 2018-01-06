@@ -1,0 +1,30 @@
+<view class='big_warp'>
+<view class='search'>
+<view class='search_input'>
+<image src='/public/images/search@2x.png '></image>
+<input class='text' placeholder='输入城市名、拼音或字母查询'></input>
+</view>
+</view>
+<view class='home'>{{home}}</view>
+<view class='address_warp'>
+<view class='address'>{{address}}</view>
+</view>
+<view class='home'>{{homes}}</view>
+<view class='all_home'>
+<view class='row_home'>{{row_home}}</view>
+<view class='row_home'>{{row_home}}</view>
+<view class='row_home'>{{row_home}}</view>
+<view class='row_home'>{{row_home}}</view>
+<view class='row_home'>{{row_home}}</view>
+
+</view>
+<view class='letter'>{{letter}}</view>
+<view class='details'>{{details}}</view>
+<view class='details'>{{details}}</view><view class='details'>{{details}}</view>
+<view class='right_list'>
+<view>#</view>
+<view>A</view><view>B</view><view>C</view><view>D</view><view>E</view><view>F</view><view>G</view><view>H</view><view>I</view><view>J</view><view>K</view><view>L</view><view>M</view><view>N</view><view>O</view><view>P</view><view>Q</view><view>R</view><view>S</view><view>T</view><view>U</view><view>V</view><view>W</view><view>X</view><view>Y</view><view>Z</view>
+
+</view>
+
+</view>

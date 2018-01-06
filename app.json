@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/positioning/positioning",
     "pages/detatl/detatl_activity",
     "pages/detatl/play_all",
     "pages/detatl/detatl",
