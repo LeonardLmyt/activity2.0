@@ -7,7 +7,7 @@
       <view class='project_title'>{{project.title}}</view>
       <view class='place'>
         <view class='all'>
-          <image src='/public/images/icon_Location_02.png '></image>
+          <image src='/public/images/icon_Location_02.png'></image>
           <view>{{project.setout}}</view>
         </view>
         <view class='meny'>
@@ -16,7 +16,7 @@
       </view>
       <view class='place'>
         <view class='all'>
-          <image src='/public/images/icon_time_02.png '></image>
+          <image src='/public/images/icon_time_02.png'></image>
           <view>{{project.time}}</view>
         </view>
         <view class='money'>
@@ -29,11 +29,11 @@
   <view class='details'>
     <view class='sign_list'>报名列表</view>
     <view class="details_main">
-      <view class="details_sub">
+      <view class="details_sub" wx:for="{{submit.userdata}}">
         <view class='righ_ionic'>
-          <image src='/public/images/icon_jianqu.png'></image>
+          <image src='/public/images/icon_jianqu.png' bindtap='toggleUser' data-id='{{item.id}}' data-check="{{item.check}}"></image>
         </view>
-        <view class='details_sub_sub' wx:for="{{submit.userdata}}">
+        <view class='details_sub_sub'>
           <view class='name'>
             <view>{{item.name}}</view>
             {{item.phone}}
@@ -65,7 +65,7 @@
     <text>￥299.00</text>
   </view>
   <view class="pay_message_rigth">
-    <button>支付</button>
+    <button bindtap='submit'>支付</button>
   </view>
 </view>
 
@@ -93,10 +93,13 @@
           {{item.idcard}}
         </view>
       </view>
-      <view class="mask_right">
+      <view class="mask_right" bindtap='toggleUser' data-id='{{item.id}}' data-check="{{item.check}}">
          <image src='/public/images/fl_icon_confirm_sel.png' wx:if="{{item.check}}"></image>
          <image src='/public/images/fl_icon_confirm_nor.png' wx:else></image>
       </view>
     </view>
   </scroll-view>
 </view>
+
+<import src="/public/public.wxml" />
+<template is="layer" data="{{layer}}" />

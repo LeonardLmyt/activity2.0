@@ -3,4 +3,3 @@
 <import src="/public/public.wxml" />
 <template is="footer" />
 <template is="layer" data="{{layer}}" />
-<template is="paste" data="{{detail,animationData}}" />
