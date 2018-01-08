@@ -11,7 +11,7 @@
         <text class='meny'>￥299</text>
       </view>
       <view class='place'>
-        <navigator class='small_place' url='/pages/positioning/positioning'>
+        <navigator class='small_place' url='/pages/location/index'>
           <image src='/public/images/location@2x.png'></image>
           <view class='place_name'>{{place_name}}</view>
         </navigator>
@@ -26,22 +26,24 @@
     <image src='/public/images/selected@2x.png '></image>
     <view class='select_activities'>{{select_activities}}</view>
   </view>
-  <navigator url='/pages/detatl/detatl'>
-    <view class='select_img'>
-      <image src='/public/images/10@2x.png '></image>
-      <view class='set_out'>{{set_out}}</view>
-    </view>
-  </navigator>
-  <view class='title'>{{tite}}</view>
-  <view class='big'>
-    <view class='time'>
-      <view>12/12</view>
-      <view class='dian'></view>
-      <view>450人浏览</view>
-    </view>
-    <view class='menys'>
-      <view>￥</view>
-      <view>299</view>
+  <view class="choice">
+    <navigator url='/pages/detatl/detatl'>
+      <view class='select_img'>
+        <image src='/public/images/10@2x.png '></image>
+        <view class='set_out'>{{set_out}}</view>
+      </view>
+    </navigator>
+    <view class='title'>{{tite}}</view>
+    <view class='big'>
+      <view class='time'>
+        <view>12/12</view>
+        <view class='dian'></view>
+        <view>450人浏览</view>
+      </view>
+      <view class='menys'>
+        <view>￥</view>
+        <view>299</view>
+      </view>
     </view>
   </view>
   <view class='list_all'>

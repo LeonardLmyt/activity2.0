@@ -1,0 +1,29 @@
+<scroll-view class='big_warp' style='height:{{windowHeight}}px' scroll-y  scroll-into-view="{{toView}}">
+  <view class='search'>
+    <view class='search_input'>
+      <image src='/public/images/search@2x.png'></image>
+      <input class='text' placeholder='输入城市名、拼音或字母查询'></input>
+    </view>
+  </view>
+  <view class='home'>你所在的地址</view>
+  <view class='address_warp'>
+    <view class='address'>{{address}}</view>
+  </view>
+  <view class='home'>境内热门城市</view>
+  <view class='all_home'>
+    <view class='row_home'>{{row_home}}</view>
+    <view class='row_home'>{{row_home}}</view>
+    <view class='row_home'>{{row_home}}</view>
+    <view class='row_home'>{{row_home}}</view>
+    <view class='row_home'>{{row_home}}</view>
+  </view>
+  <view class="letter_main" wx:for="{{letter}}" wx:for-item="item" wx:key>
+    <view class='letter' id="{{item.l}}">{{item.l}}</view>
+    <view class='details' wx:for="{{item.c}}" wx:for-item="item_sub" wx:key>{{item_sub}}</view>
+  </view>
+  <view class='letter_list'>
+    <view class="letter_list_sub">
+      <view bindtouchstart='letterTouchStart' wx:for="{{letter}}" wx:for-item="item" wx:key data-id='{{item.l}}' bindtouchmove='letterTouchMove'>{{item.l}}</view>
+    </view>
+  </view>
+</scroll-view>

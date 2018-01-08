@@ -23,8 +23,10 @@ box-align:center;font-weight: bold;
 .input image{width: 28rpx;height: 28rpx;margin-right: 10rpx;  }
 .input{display: -webkit-box;display: box;font-size: 28rpx;-webkit-box-align: center;box-align: center;margin-left: 30rpx;}
 .select image{width: 32rpx;height: 32rpx;}
-.select{width: 100%;display: -webkit-box;display: box;padding-left: 30rpx;}
+.select{box-sizing: border-box;-webkit-box-sizing: border-box;width: 100%;display: -webkit-box;display: box;padding-left: 30rpx;}
 .select_activities{font-size: 30rpx;color: #444;margin-left: 10rpx;line-height: 55rpx;font-weight: bold}
+
+.choice{width: 100%;overflow: hidden;}
 .select_img image{width: 690rpx;height: 320rpx;padding: 26rpx 30rpx;}
 .select_img{position: relative;}
 .set_out{position: absolute;top: 75%;width: auto;background: #4988fd;color: #fff;font-size: 20rpx;line-height: 50rpx;padding: 0 20rpx;border-radius: 40rpx;left: 56rpx;opacity: 0.8}
@@ -70,6 +72,7 @@ opacity:0.8;
 /*region*/
 .region{box-sizing: border-box;-webkit-box-sizing: border-box;height: 262rpx;overflow: hidden;padding: 40rpx;background-color: #F7F8FC;white-space:nowrap;}
 .region_sub{position: relative;display: inline-block;width: 182rpx;height: 182rpx;margin-right: 20rpx;-webkit-box-align: center;box-align: center;-webkit-box-pack: center;box-pack: center;}
+.region_sub:last-child{margin-right: 0;}
 .region_sub image{width: 182rpx;height: 182rpx;}
 .region_title{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 .region_title_sub{display: -webkit-box;display:box;width: 100%;height: 100%;-webkit-box-orient: vertical;box-orient: vertical;color: white;-webkit-box-align: center;box-align: center;-webkit-box-pack: center;box-pack: center;}

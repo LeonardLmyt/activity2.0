@@ -25,6 +25,12 @@
 					"name": "detatl_activity",
 					"pathName": "pages/detatl/detatl_activity",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "定位",
+					"pathName": "pages/location/index",
+					"query": ""
 				}
 			]
 		}
