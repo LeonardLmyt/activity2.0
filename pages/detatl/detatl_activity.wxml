@@ -73,7 +73,7 @@
 <view class="mask_content {{toggleMask.show ? toggleMask.maskClass : ''}}">
   <view class="mask_content_head">
     <view class="close" bindtap='toggleMask' data-show='{{toggleMask.show}}'>取消</view>
-    <view class="ok">确定</view>
+    <view class="ok" bindtap='toggleMask' data-show='{{toggleMask.show}}'>确定</view>
   </view>
   <view class="mask_add">
     <image src='/public/images/icon_tianjia.png'></image>

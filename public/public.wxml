@@ -17,10 +17,10 @@
   </view>
 </template>
 <template name="layer">
-  <view class="layer" hidden='{{layer.layerShow}}'>
+  <view class="layer" hidden='{{layer.show}}'>
     <view class="layer-sub">
       <view class="layer-seat"></view>
-      <view class="layer-content {{layer.layerStatus}}">{{layer.layerContent}}</view>
+      <view class="layer-content {{layer.state}}">{{layer.content}}</view>
       <view class="layer-seat"></view>
     </view>
   </view>

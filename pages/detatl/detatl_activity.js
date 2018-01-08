@@ -4,9 +4,9 @@ let mixin = require('../../public/js/mixin.js'),
 Page({
   data: {
     layer: {
-      layerShow: true,
-      layerStatus: '',
-      layerContent: ''
+      show: true,
+      state: '',
+      content: ''
     },
     project: {
       cover: '/public/images/3@2x.png',

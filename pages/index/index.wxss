@@ -51,14 +51,6 @@ border-radius:40rpx;
 left:46rpx;
 opacity:0.8;
  }
- .shuffling{width: 100%;background: #F7F8FC;display: -webkit-box;display: box}
- .shuffling image{width: 182rpx;height: 182rpx;padding-top: 40rpx;padding-bottom: 40rpx;padding-left: 20rpx;}
- .shuffing_img{position: relative;}
-.shuffling_name{position:absolute;
-top:82rpx;
-left:82rpx;
-text-align: center
-}
 .chinese{font-size: 36rpx;color: #fff;font-weight: bold;}
 .english{font-size: 22rpx;color: #fff;}
 .meny{display: -webkit-box;display: box;}
@@ -74,3 +66,12 @@ text-align: center
 .menys :nth-child(2){
   font-size: 32rpx;color: #FF5A0E;font-weight: bold;
 }
+
+/*region*/
+.region{box-sizing: border-box;-webkit-box-sizing: border-box;height: 262rpx;overflow: hidden;padding: 40rpx;background-color: #F7F8FC;white-space:nowrap;}
+.region_sub{position: relative;display: inline-block;width: 182rpx;height: 182rpx;margin-right: 20rpx;-webkit-box-align: center;box-align: center;-webkit-box-pack: center;box-pack: center;}
+.region_sub image{width: 182rpx;height: 182rpx;}
+.region_title{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.region_title_sub{display: -webkit-box;display:box;width: 100%;height: 100%;-webkit-box-orient: vertical;box-orient: vertical;color: white;-webkit-box-align: center;box-align: center;-webkit-box-pack: center;box-pack: center;}
+.region_title_sub view:nth-child(1){font-size: 36rpx;}
+.region_title_sub view:nth-child(2){font-size: 22rpx;}
