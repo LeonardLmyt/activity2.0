@@ -1,0 +1,58 @@
+<view class='big_warp'>
+<view class='title_warp'>
+<view class='left_img'>
+<image src='/public/images/img_230X150_01.png '></image>
+</view>
+<view class='right_contnet'>
+<view class='big_title'>{{big_title}}</view>
+
+<view class='meny'>
+<image src='/public/images/icon_money.png '></image>
+<view class='meny_polpe'>{{meny_polpe}}</view>
+</view>
+<view class='time'>
+<image src='/public/images/icon_time_02.png '></image>
+<view class='titme_all'>{{time_all}}</view>
+</view>
+</view>
+
+</view>
+<view class='informations'>
+<view class='information'>{{information}}</view>
+<view class='paid'>{{paid}}</view>
+</view>
+<view class="user_list">
+<view class='list_details'>
+<view>张海泉</view>
+<view>男</view>
+<view>44182719960222727758</view>
+<view>13641662408</view>
+</view>
+<view class='list_details'>
+<view>张海泉</view>
+<view>男</view>
+<view>44182719960222727758</view>
+<view>13641662408</view>
+</view>
+<view class='list_details'>
+<view>张海泉</view>
+<view>男</view>
+<view>44182719960222727758</view>
+<view>13641662408</view>
+</view>
+<view class='list_details'>
+<view>张海泉</view>
+<view>男</view>
+<view>44182719960222727758</view>
+<view>13641662408</view>
+</view> 
+</view>
+
+<view class='next'>
+<view>共4人，合计</view>
+<view>￥299</view>
+
+</view>
+
+</view>
+

@@ -75,7 +75,7 @@
       <image src='/public/images/icon_Consultation.png '></image>
       <view>咨询</view>
     </view>
-    <navigator class='next_sub' url='/pages/detatl/detatl_activity'>
+    <navigator class='next_sub' url='/pages/detatl/detatl_activityTwo'>
       <view>￥
         <text>199</text>
       </view>

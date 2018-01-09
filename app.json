@@ -1,12 +1,16 @@
 {
   "pages": [
+        "pages/nearby/activity",
+    "pages/nearby/registration_information",
     "pages/index/index",
+    "pages/detatl/detatl_information",
     "pages/positioning/positioning",
     "pages/detatl/detatl_activity",
     "pages/detatl/play_all",
     "pages/detatl/detatl",
     "pages/nearby/index",
-    "pages/posting/posting"
+    "pages/posting/posting",
+    "pages/detatl/detatl_activityTwo"
   ],
   "window": {
     "backgroundTextStyle": "light",
