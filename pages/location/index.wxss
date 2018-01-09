@@ -12,6 +12,11 @@ padding: 26rpx 0 20rpx 0;
 }
 .all_home{display: -webkit-box;display: box;background: #F7F8FB;word-wrap:break-word}
 .row_home{display: inline-block;background: white;width: auto;height: 76rpx;line-height: 76rpx;text-align: center;border-radius: 4rpx;font-size: 30rpx;color: #101010;padding: 0 20rpx;min-width: 150rpx;margin-left: 20rpx;margin-bottom: 40rpx;margin-right: 20rpx}
+
+
+.letter_main{width: 100%;overflow: hidden;}
 .letter{background: #F7F8FB;padding: 30rpx 0 10rpx 44rpx;font-size: 28rpxl;color: #888;}
 .details{width: 100%;height: 88rpx;padding-left: 44rpx;line-height: 88rpx;color: #0d0d0d;font-size: 32rpx;border-bottom: 2rpx solid #F7F8FB;}
-.right_list{position: fixed;right: 1%;top: 9%;line-height: 40rpx;color: #ff5a0e;font-size: 26rpx;text-align: center}
+.letter_list{position: fixed;right: 0;top: 9%;bottom: 1%;line-height: 40rpx;color: #ff5a0e;font-size: 26rpx;text-align: center;overflow: hidden;width: 50rpx;}
+.letter_list_sub{display: -webkit-box;display:box;-webkit-box-orient: vertical;box-orient: vertical;-webkit-box-pack: justify;box-pack: justify;width: 100%;height: 100%;}
+.letter_list_sub view{height: 3.703703703703704%;}
