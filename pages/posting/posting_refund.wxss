@@ -1,0 +1,44 @@
+.title_list{width: 100%;height: 220rpx;border-bottom: 10rpx solid #F7F8Fd;display: box;display: -webkit-box;}
+.right_img image{width: 230rpx;height: 158rpx;padding: 30rpx 0 0 30rpx}
+.place{display: -webkit-box;display: box}
+.all image{width: 28rpx;height: 28rpx;}
+.all {display: box;display: -webkit-box;-webkit-box-flex: 1.0;box-flex: 1.0;font-size: 24rpx;color: #888;margin-top: 10rpx;}
+.right_img{-webkit-box-flex: 1.0;box-flex: 1.0;}
+
+.left_content{width: 57%;padding: 30rpx 30rpx 30rpx 30rpx;}
+.bigTitle{width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 34rpx;color: #444;font-weight: bold;
+-webkit-box-flex: 1.0;box-flex: 1.0;height: 79rpx;}
+.meny{display: -webkit-box;display: box;margin-right: 30rpx;font-size: 24rpx;color: #ccc;text-decoration:line-through;
+}
+.all view{margin-left: 10rpx;}
+.menys{display: -webkit-box;display: box;margin-right: 30rpx;font-size: 36rpx;color: #ff5a0e;font-weight: bold
+}
+.name_list{width: 100%;height: 155rpx;border-bottom: 1px solid #E7E7E7;}
+.nub image{width: 36rpx;height: 36rpx;}
+.nub{box-sizing: border-box;-webkit-box-sizing: border-box;width: 100%;display: -webkit-box;display: box;padding: 30rpx 0 20rpx 30rpx;font-size: 32rpx;color: #333;}
+.id{display: -webkit-box;display: box;padding: 0 0 38rpx 30rpx;font-size: 26rpx;color: #888;}
+.id :nth-child(2){margin-left: 30rpx}
+.small{display: -webkit-box;display: box;-webkit-box-align: center;box-align: center;}
+.small image{display: -webkit-box;display: box;margin: 0 80rpx 0 10rpx;}
+.combined{width: 100%;height: 92rpx;border-bottom: 10rpx solid #F7F8Fd;display: -webkit-box;display: box;line-height: 92rpx;-webkit-box-pack: end;box-pack: end;letter-spacing:1rpx;background-color: white}
+.com{font-size: 28rpx;color: #333;}
+.people{font-size: 28rpx;color: #333;margin-left: 10rpx;}
+.price{font-size: 28rpx;color: #ff5a0e;font-weight: bold;margin-right: 30rpx;margin-left: 10rpx;}
+.order{width: 100%;padding: 40rpx 0 39rpx 30rpx; }
+page{width: 100%;height: 100%;background-color: #F7F8FB}
+.big_w{width: 100%;height: auto;background-color: white}
+.state{display: box;display: -webkit-box;line-height: 56rpx}
+.number{display: box;display: -webkit-box;line-height: 56rpx}
+.pay{display: -webkit-box;display: box;line-height: 56rpx}
+.trading{display: box;display: -webkit-box;line-height: 56rpx}
+.state :nth-child(2){margin-left: 36rpx;font-size: 26rpx;color: #888}
+.number :nth-child(2){margin-left: 36rpx;font-size: 26rpx;color: #888}
+.pay :nth-child(2){margin-left: 36rpx;font-size: 26rpx;color: #888}
+.trading :nth-child(2){margin-left: 36rpx;font-size: 26rpx;color: #888}
+.state :nth-child(1){font-size: 26rpx;color: #444}
+.number :nth-child(1){font-size: 26rpx;color: #444}
+.pay :nth-child(1){font-size: 26rpx;color: #444}
+.trading :nth-child(1){font-size: 26rpx;color: #444}
+.positions image{width: 95rpx;height: 95rpx;position: fixed;top:8%;
+left:65%;
+}

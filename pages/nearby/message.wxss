@@ -1,0 +1,16 @@
+.message_img image{width: 88rpx;height: 88rpx;padding:  35rpx 27rpx  0 30rpx;}
+.message_list{width: 100%;display: box;display: -webkit-box;height: 158rpx }
+.name{display: -webkit-box;display: box;box-sizing: border-box;-webkit-box-sizing: border-box;margin-top: 31rpx;}
+.conten{border-bottom: 1px solid #E7E7E7;-webkit-box-flex: 1.0;box-flex: 1.0;}
+.name :nth-child(1){font-size: 28rpx;color: #666;-webkit-box-flex: 1.0;box-flex: 1.0;}
+.name :nth-child(2){font-size: 24rpx;color: #aaa;margin-right: 30rpx;}
+.list_content{font-size: 30rpx;color: #333;margin-top: 10rpx;overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ display: box;
+ -webkit-line-clamp:1;
+line-clamp:1;
+ -webkit-box-orient:vertical;
+ box-orient:vertical;
+ margin-right: 30rpx
+ }

@@ -2,7 +2,8 @@
 .swiper{height:380rpx;width: 100%}
 .title_img image{width: 100%;height: 100%}
  .title{display: -webkit-box;display: box;box-sizing:border-box;-webkit-box-sizing: border-box;} 
- .title_centent{-webkit-box-flex: 1.0;box-flex: 1.0;padding: 21rpx 0 0rpx 30rpx;color: #444;line-height: 50rpx;font-weight: bold;font-size: 36rpx}
+ .title_centent{-webkit-box-flex: 1.0;box-flex: 1.0;padding: 21rpx 0 0rpx 30rpx;color: #444;line-height: 50rpx;font-weight: bold;font-size: 36rpx;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;line-clamp: 2;-webkit-box-orient: vertical;box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;line-clamp: 2;-webkit-box-orient: vertical;box-orient: vertical; width: 96%;height: 97rpx;display: -webkit-box;display:box;}
+
 .title_meny{width: 25%;padding: 49rpx 0 0 0;text-align:center;}
 .meny{color: #FF5A0E;font-size: 48rpx;font-weight: bold;display: -webkit-box;display: box;-webkit-box-pack: center;box-pack: center;-webkit-box-align: start;box-align: start; }
 .meny text{color: #FF5A0E;font-size: 30rpx;display: -webkit-box;display: box;}

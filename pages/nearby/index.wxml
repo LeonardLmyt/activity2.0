@@ -1,4 +1,56 @@
+<view class='title'>
+<view class='big_warp'>
+<view class='big_backgrongd'>
+<image src='/public/images/bg.png'></image>
+<view class='midden'>
+<view class='coente_img'>
+<image src='/public/images/Members_img_user_.png '></image>
+</view>
+<view class='centen_name'>龙楚怡</view>
+</view>
 
+</view>
+</view>
+<navigator class='list' url='/pages/nearby/message'>
+<view class='information'>
+<image src='/public/images/icon_news.png '></image>
+<view>消息</view>
+<view></view>
+</view>
+
+
+</navigator>
+<view class='list'>
+<view class='information'>
+<image src='/public/images/icon_Customer service.png '></image>
+<view>客服</view>
+<view></view>
+</view>
+
+
+</view>
+<navigator class='list' url='/pages/nearby/activity_management'>
+<view class='information'>
+<image src='/public/images/selected@2x.png '></image>
+<view>活动管理</view>
+<view></view>
+</view>
+
+
+</navigator>
+<view class='list'>
+<view class='information'>
+<image src='/public/images/icon_Withdrawals.png '></image>
+<view>提现</view>
+<view></view>
+</view>
+
+
+</view>
+
+
+
+</view>
 
 
 
@@ -9,5 +61,4 @@
 
 <import src="/public/public.wxml" />
 <template is="footer" />
-<template is="layer" data="{{layer}}" />
 <template is="paste" data="{{detail,animationData}}" />

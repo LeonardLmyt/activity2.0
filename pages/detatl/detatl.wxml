@@ -71,10 +71,10 @@
       <image src='/public/images/icon_share.png '></image>
       <view>分享</view>
     </view>
-    <view class='next_sub'>
+    <navigator class='next_sub' url='/pages/detatl/detatl_service'>
       <image src='/public/images/icon_Consultation.png '></image>
       <view>咨询</view>
-    </view>
+    </navigator>
     <navigator class='next_sub' url='/pages/detatl/detatl_activityTwo'>
       <view>￥
         <text>199</text>

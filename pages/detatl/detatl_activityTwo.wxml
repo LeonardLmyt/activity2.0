@@ -64,7 +64,7 @@
     总费用：
     <text>￥299.00</text>
   </view>
-  <navigator class="pay_message_rigth" url=''>
+  <navigator class="pay_message_rigth" url='/pages/detatl/detatl_spellGroup'>
     <button bindtap='submit'>支付</button>
   </navigator>
 </view>

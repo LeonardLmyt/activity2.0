@@ -1,0 +1,15 @@
+page{background: #ebecee;}
+.cotent{width: 690rpx;height: 210rpx;background: white;border-radius: 8rpx;display: box;display: -webkit-box;margin: 0 auto;margin-top: 30rpx;}
+
+.project{display: box;display: -webkit-box;box-sizing: border-box;-webkit-box-sizing: border-box;width: 100%;overflow: hidden;padding: 26rpx 30rpx;}
+.project_img{width: 230rpx;height: 158rpx;margin-right: 30rpx;}
+.project_img image{width: 230rpx;height: 158rpx;border-radius: 5rpx;-webkit-border-radius: 5rpx;}
+.place{display: -webkit-box;display: box}
+.all image{width: 28rpx;height: 28rpx;}
+.all {display: box;display: -webkit-box;-webkit-box-flex: 1.0;box-flex: 1.0;font-size: 24rpx;color: #888;margin-top: 10rpx;}
+.project_content{-webkit-box-flex: 1.0;box-flex: 1.0;}
+.project_title{width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 34rpx;color: #444;font-weight: bold;-webkit-box-flex: 1.0;box-flex: 1.0;height: 70rpx;}
+.meny{display: -webkit-box;display: box;font-size: 24rpx;color: #ccc;text-decoration:line-through;-webkit-box-align: end;box-align: end;}
+.all view{margin-left: 10rpx;letter-spacing:3rpx;} 
+.money{display: -webkit-box;display: box;font-size: 40rpx;color: #ff5a0e;}
+.money view{font-size:30rpx;}
