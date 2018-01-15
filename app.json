@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/posting/exitActivity",
+    "pages/posting/applyRefund",
+    "pages/detatl/play_all",
     "pages/nearby/registration_information",
     "pages/detatl/detatl_spellGroup",
     "pages/nearby/message",
@@ -9,14 +12,14 @@
     "pages/posting/posting",
     "pages/nearby/index",
     "pages/detatl/detatl_activity",
-    "pages/detatl/play_all",
     "pages/detatl/detatl_information",
     "pages/detatl/detatl",
     "pages/detatl/detatl_activityTwo",
     "pages/posting/posting_order",
     "pages/location/index",
     "pages/posting/posting_refund",
-    "pages/detatl/detatl_service"
+    "pages/detatl/detatl_service",
+    "pages/posting/historyNegotiation"
   ],
   "window": {
     "backgroundTextStyle": "light",

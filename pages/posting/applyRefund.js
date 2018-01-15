@@ -1,11 +1,18 @@
-// pages/posting/posting_ applyRefund.js
+// pages/posting/applyRefund.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    project: {
+      cover: '/public/images/3@2x.png',
+      title: '雪色浪漫 滑雪 看冰河雾松',
+      setout: '广州出发',
+      time: '06/18至06/22',
+      originalprice: '299',
+      price: '199'
+    },
   },
 
   /**

@@ -1,0 +1,85 @@
+<view class='big_warp'>
+<view class='midden_content'>
+<image src='/public/images/tchd_icon_clock.png '></image>
+<view>退款申请提交</view>
+<view>退款申请预计在2~5个工作日内完成审核，具体退款金额将核算后决定</view>
+</view>
+<view class='apply_box'>
+<view class='apply_first'>
+<image  src='/public/images/tchd_icon_Revoke.png '></image>
+<view>撤销申请</view>
+</view>
+<view class='apply_two'>
+<image src='/public/images/tchd_icon_modify.png'></image>
+<view>修改申请</view>
+</view>
+</view>
+<navigator class='history' url='/pages/posting/historyNegotiation'>
+<view>协商历史</view>
+<image src='/public/images/icon_More.png '></image>
+</navigator>
+
+
+
+<view class="content">
+  <view class='project' url='/pages/detatl/play_all'>
+    <view class='project_img'>
+      <image src='{{project.cover}}'></image>
+    </view>
+    <view class='project_content'>
+      <view class='project_title'>{{project.title}}</view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_Location_02.png'></image>
+          <view>{{project.setout}}</view>
+        </view>
+     
+      </view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_time_02.png'></image>
+          <view>{{project.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+
+  <view class='list_name'>
+  <view>张海爽</view>
+  <view>男</view>
+  <view>441827199602221554</view>
+  <view>137251759111</view>
+  </view>
+
+  <view class='list_name'>
+  <view>张海爽</view>
+  <view>男</view>
+  <view>441827199602221554</view>
+  <view>137251759111</view>
+  </view>
+  <view class='refund_list'>
+  <view class='refund_meny'>
+  <view>退款金额</view>
+  <view>￥299</view>
+  </view>
+    <view class='refund_play'>
+  <view>退款原因</view>
+  <view>不想买了</view>
+  </view>
+    <view class='refund_play'>
+  <view>退款编号</view>
+  <view>23142314231423142314</view>
+  </view>
+  
+  
+  
+  </view>
+  <view class='al_instructions'>
+  <view>退款说明</view>
+    <view>1、在活动开始前24小时内不能申请退款;</view>
+  <view>2、活动当天因为个人原因不能参加活动的,活动费用不退还;</view>
+  <view>3、不接受潜员参加;</view>
+  <view>3、退款将在2~5个工作日返回原账号,谢谢</view>
+  </view>
+</view>

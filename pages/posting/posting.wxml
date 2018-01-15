@@ -282,7 +282,7 @@
           <image src='/public/images/icon_time_02.png'></image>
           <view>{{project.time}}</view>
         </view>
-        <navigator class='money' url="pages/posting/posting_applyRefund">
+        <navigator class='money' url="/pages/posting/applyRefund">
           <view>申请退款</view>
        
         </navigator>

@@ -9,6 +9,22 @@
 	"appid": "wxbf05707467d24004",
 	"projectname": "activity2.0--%E5%BC%80%E5%8F%91%E7%89%88",
 	"condition": {
+		"weapp": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "申请退款页面",
+					"pathName": "pages/posting/exitActivity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "历史协商",
+					"pathName": "pages/posting/historyNegotiation"
+				}
+			]
+		},
 		"search": {
 			"current": -1,
 			"list": []
