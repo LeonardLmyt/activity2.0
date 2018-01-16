@@ -1,9 +1,9 @@
 {
   "pages": [
-      "pages/nearby/activity_management",
-    "pages/nearby/registration_information",
     "pages/index/index",
-        "pages/nearby/withdrawal_list",
+    "pages/nearby/activity_management",
+    "pages/nearby/registration_information",
+    "pages/nearby/withdrawal_list",
     "pages/posting/exitActivity",
     "pages/posting/applyRefund",
     "pages/detatl/play_all",

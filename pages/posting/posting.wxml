@@ -21,9 +21,11 @@
             <view wx:elif="{{Jitem.type === 3}}">售后</view>
             <view wx:elif="{{Jitem.type === 4}}" class="gray">取消</view>
           </view>
-          <navigator class='project' url='/pages/posting/posting_order'>
+          <view class='project'>
             <view class='project_img'>
-              <image src='{{Jitem.cover}}'></image>
+              <navigator url='/pages/posting/posting_order'>
+                <image src='{{Jitem.cover}}'></image>
+              </navigator>
             </view>
             <view class='project_content'>
               <view class='project_title'>{{Jitem.title}}</view>
@@ -39,12 +41,16 @@
                   <view>{{Jitem.time}}</view>
                 </view>
                 <view class='money'>
-                  <view wx:if="{{Jitem.type === 0}}">付款</view>
-                  <view wx:elif="{{Jitem.type === 1}}">申请退款</view>
+                  <navigator wx:if="{{Jitem.type === 0}}">
+                    <view>付款</view>
+                  </navigator>
+                  <navigator wx:elif="{{Jitem.type === 1}}" url="/pages/posting/applyRefund">
+                    <view>申请退款</view>
+                  </navigator>
                 </view>
               </view>
             </view>
-          </navigator>
+          </view>
         </view>
       </view>
     </scroll-view>

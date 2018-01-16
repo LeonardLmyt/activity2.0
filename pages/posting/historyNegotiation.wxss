@@ -1,0 +1,22 @@
+page{background-color:#f7f8fb;}
+.content{width: 100%;overflow: hidden;}
+.content_sub{box-sizing: border-box;-webkit-box-sizing: border-box;width: 100%;overflow: hidden;display: -webkit-box;display: box;padding: 40rpx 30rpx 38rpx 30rpx;border-bottom: 1rpx solid #e7e7e7;background-color:#fff;}
+.content_sub_left{width: 58rpx;height: 58rpx;margin-right: 27rpx;}
+.content_sub_left image{width: 58rpx;height: 58rpx;border-radius:50%;-webkit-border-radius:50%;}
+.content_sub_right{-webkit-box-flex: 1.0;box-flex: 1.0;}
+.name{width: 100%;overflow:hidden;color:#666666;font-size: 28rpx;}
+.found{display: inline-block;background-color: #ffe8de;border-radius: 4rpx;-webkit-border-radius: 4rpx;width: 160rpx;text-align: center;line-height: 32rpx;padding: 8rpx 10rpx;color: #ff581e;margin-left: 15rpx;}
+.time{color: #bbbbbb;font-size: 22rpx;padding: 14rpx 0 25rpx 0;}
+.buy{width: 100%;overflow:hidden;font-size: 30rpx;}
+.buy view{width: 100%;overflow:hidden;line-height: 50rpx;color:#333;}
+.buy view text{margin-left: 30rpx;color:#666;}
+.live{display: inline-block;font-size: 28rpx;color:#bbbbbb;margin-left: 25rpx;}
+.con{font-size: 30rpx;color:#333333;}
+
+
+.button{position: fixed;width: 100%;bottom: 0;left: 0;height: 98rpx;}
+.button_sub{width: 100%;overflow: hidden;display: -webkit-box;display: box;}
+.button button{width: 50%;margin: 0;border: 0;border-radius: 0;color: #fff;font-size: 32rpx;line-height: 98rpx;height: 98rpx;}
+.button button::after{content:none;}
+.button button:nth-child(1){background-color:#5d5f64;}
+.button button:nth-child(2){background-color:#548ffb;}

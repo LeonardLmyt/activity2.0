@@ -1,2 +1,66 @@
-
-的根深蒂固十大歌手的v
+<view class="content">
+  <view class="content_sub">
+    <view class="content_sub_left">
+      <image src="/public/images/user_64X64.png"></image>
+    </view>
+    <view class="content_sub_right">
+      <view class="name">
+        远帆(买家)
+        <view class="found">创建退款申请</view>
+      </view>
+      <view class="time">12/19 16:14</view>
+      <view class="buy">
+        <view>退款金额
+          <text>¥299.00</text>
+        </view>
+        <view>退款原因
+          <text>不想买了</text>
+        </view>
+        <view>退款描述
+          <text>人员凑不齐，时间不确定</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content_sub">
+    <view class="content_sub_left">
+      <image src="/public/images/user_64X64.png"></image>
+    </view>
+    <view class="content_sub_right">
+      <view class="name">
+        远帆(卖家)
+        <view class="live">给你留言</view>
+      </view>
+      <view class="time">12/19 16:14</view>
+      <view class="con">
+        行程有没有注意事项啊，3个人都需要带多少装备呢？
+      </view>
+    </view>
+  </view>
+  <view class="content_sub">
+    <view class="content_sub_left">
+      <image src="/public/images/user_64X64.png"></image>
+    </view>
+    <view class="content_sub_right">
+      <view class="name">
+        远帆(买家)
+      </view>
+      <view class="time">12/19 16:14</view>
+      <view class="buy">
+        <view>退款原因
+          <text>不想买了</text>
+        </view>
+        <view>退款描述
+          <text>人员凑不齐，时间不确定</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style='width:100%;height:98rpx;'></view>
+<view class="button">
+  <view class="button_sub">
+    <button>联系卖家</button>
+    <button>我要留言</button>
+  </view>
+</view>
