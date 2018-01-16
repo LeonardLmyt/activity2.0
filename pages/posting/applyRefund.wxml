@@ -35,7 +35,7 @@
     <view class='id'>441827199602212442</view>
   </view>
   <view class='information_right'>
-    <view></view>
+    <view bindtap='checked' class="{{checked ? 'checked_ok' : ''}}"></view>
   </view>
 </view>
 <view class='information'>

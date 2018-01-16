@@ -1,37 +1,30 @@
 <view class='big_warp'>
-<view class='name'>
-<view class='name_warp'>
-<view class='name_warpcontent'>真实姓名</view>
-<input placeholder='（与证件名字一致）'></input>
-</view>
-</view>
-
-
-<view class='name'>
-<view class='name_warp'>
-<view  class='name_warpcontent'>性别</view>
-<view class='gender'>
-<view>男</view>
-<view>女</view>
-</view>
-</view>
-</view>
-
-
-<view class='name'>
-<view class='name_warp'>
-<view  class='name_warpcontent'>身份证</view>
-<input placeholder='（与证件号码一致）'></input>
-</view>
-</view>
-
-
-<view class='name'>
-<view class='name_warp'>
-<view  class='name_warpcontent'>电话号码</view>
-<input placeholder='（必填 ）'></input>
-</view>
-</view>
-
+  <view class='name'>
+    <view class='name_warp'>
+      <view class='name_warpcontent'>真实姓名</view>
+      <input placeholder='（与证件名字一致）'></input>
+    </view>
+  </view>
+  <view class='name'>
+    <view class='name_warp'>
+      <view class='name_warpcontent'>性别</view>
+      <view class='gender'>
+        <view bindtap='checkSex' data-ch='{{true}}' class="{{sex ? 'gender_ok' : ''}}">男</view>
+        <view bindtap='checkSex' data-ch='{{false}}' class="{{sex ? '' : 'gender_ok'}}">女</view>
+      </view>
+    </view>
+  </view>
+  <view class='name'>
+    <view class='name_warp'>
+      <view class='name_warpcontent'>身份证</view>
+      <input placeholder='（与证件号码一致）'></input>
+    </view>
+  </view>
+  <view class='name'>
+    <view class='name_warp'>
+      <view class='name_warpcontent'>电话号码</view>
+      <input placeholder='（必填 ）'></input>
+    </view>
+  </view>
 </view>
 <button class='buttons'>确定</button>
