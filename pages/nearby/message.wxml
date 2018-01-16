@@ -1,67 +1,16 @@
-    <view class='big_warp'>
-    <view style='width:100%;height:20rpx;background:#F7F8FB'></view>
-    <view class='message_list'>
+<view class='big_warp'>
+  <view style='width:100%;height:20rpx;background:#F7F8FB'></view>
+  <view class='message_list' wx:for="{{message}}" wx:for-index="index" wx:for-item="item">
     <view class='message_img'>
-    <image src='/public/images/bmgl_uesr_88X88_02.png'></image>
+      <image src='{{item.img}}'></image>
+      <view class="point" wx:if="{{!!item.type}}"></view>
     </view>
     <view class='conten'>
-    <view class='name'>
-    <view>张三</view>
-    <view>10/01/01</view>
+      <view class='name'>
+        <view>{{item.name}}</view>
+        <view>{{item.time}}</view>
+      </view>
+      <view class='list_content'>{{item.content}}</view>
     </view>
-    <view class='list_content'>没有更好的套餐</view>
-    </view>
-    
-    
-    
-    
-    </view>
-      <view class='message_list'>
-    <view class='message_img'>
-    <image src='/public/images/bmgl_uesr_88X88_02.png'></image>
-    </view>
-    <view class='conten'>
-    <view class='name'>
-    <view>张三</view>
-    <view>10/01/01</view>
-    </view>
-    <view class='list_content'>没有更好的套餐</view>
-    </view>
-    
-    
-    
-    
-    </view>
-      <view class='message_list'>
-    <view class='message_img'>
-    <image src='/public/images/bmgl_uesr_88X88_02.png'></image>
-    </view>
-    <view class='conten'>
-    <view class='name'>
-    <view>张三</view>
-    <view>10/01/01</view>
-    </view>
-    <view class='list_content'>没有更好的套餐</view>
-    </view>
-    
-    
-    
-    
-    </view>
-      <view class='message_list'>
-    <view class='message_img'>
-    <image src='/public/images/bmgl_uesr_88X88_02.png'></image>
-    </view>
-    <view class='conten'>
-    <view class='name'>
-    <view>张三</view>
-    <view>10/01/01</view>
-    </view>
-    <view class='list_content'>没有更好的套餐</view>
-    </view>
-    
-    
-    
-    
-    </view>
-    </view>
+  </view>
+</view>

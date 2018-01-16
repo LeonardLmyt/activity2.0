@@ -43,6 +43,12 @@
 					"name": "posting",
 					"pathName": "pages/posting/posting",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "message",
+					"pathName": "pages/nearby/message",
+					"query": ""
 				}
 			]
 		}
