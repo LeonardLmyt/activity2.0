@@ -14,13 +14,13 @@
 </view>
 </navigator>
 <view class='record'>提现记录</view>
-<view class='into'>
+<navigator class='into' url='/pages/nearby/change_detail'>
 <view class='into_weact'>
 <view>微信转入</view>
 <view>12/19 03:21</view>
 </view>
 <view class='meny'>+500</view>
-</view>
+</navigator>
 <view class='into'>
 <view class='into_weact'>
 <view>微信转入</view>

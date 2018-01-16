@@ -10,7 +10,7 @@
         <view class='my_last'>
           <image src='/public/images/icon_per_No content.png '></image>
         </view>
-        <view class='nocontent'>你没有发表过任何东西噢！</view>
+        <view class='nocontent'>还没有任何数据哦</view>
       </view>
       <view wx:else>
         <view class='big_warp' wx:for="{{projectlist}}" wx:for-index="Jindex" wx:for-item="Jitem" wx:key>

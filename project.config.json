@@ -10,7 +10,7 @@
 	"projectname": "activity2.0--%E5%BC%80%E5%8F%91%E7%89%88",
 	"condition": {
 		"weapp": {
-			"current": 2,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -46,6 +46,18 @@
 					"id": -1,
 					"name": "提现详情",
 					"pathName": "pages/nearby/withdrawal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动管理",
+					"pathName": "pages/nearby/play_management",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "零钱明细",
+					"pathName": "pages/nearby/change_detail",
 					"query": ""
 				}
 			]

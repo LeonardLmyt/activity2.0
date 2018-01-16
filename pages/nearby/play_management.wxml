@@ -1,0 +1,27 @@
+<view class='big_warp'>
+<view class='management_title'>
+<view class='midden_list'>
+<view class='left_name'>
+报名（人）
+<view class='polpe'>10</view>
+</view>
+<view class='right_meny'>
+费用（元）
+<view class='polpe'>888.88</view>
+</view>
+</view>
+</view>
+<view class='next'>
+<navigator url="/pages/nearby/activity" class='left_next'>
+<image src='/public/images/icon_Activity management.png '></image>
+<view>报名管理</view>
+</navigator>
+<navigator class='right_next' url="/pages/detatl/detatl">
+<image src='/public/images/icon_View activity.png '></image>
+<view>查看活动</view>
+</navigator>
+
+
+</view>
+
+</view>

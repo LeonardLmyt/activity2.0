@@ -1,0 +1,27 @@
+<view class='big_warp'>
+<view class='booked'>
+<view>入账金额</view>
+<view>500.00</view>
+</view>
+<view class='next'>
+<view class='next_lis'>
+<view>类型</view>
+<view>转入</view>
+</view>
+<view class='next_lis'>
+<view>时间</view>
+<view>2018年1月22日 18:33:01</view>
+</view><view class='next_lis'>
+<view>交易单号</view>
+<view>12232434655465465</view>
+</view><view class='next_lis'>
+<view>剩余零钱</view>
+<view>888.88</view>
+</view><view class='next_lis'>
+<view>备注</view>
+<view>微信转账</view>
+</view>
+
+</view>
+
+</view>

@@ -1,15 +1,16 @@
 {
   "pages": [
-      "pages/nearby/activity_management",
-    "pages/nearby/registration_information",
     "pages/index/index",
-        "pages/nearby/withdrawal_list",
-    "pages/posting/exitActivity",
-    "pages/posting/applyRefund",
-    "pages/detatl/play_all",
-    "pages/detatl/detatl_spellGroup",
-    "pages/nearby/message",
+    "pages/nearby/registration_information",
     "pages/nearby/activity",
+    "pages/nearby/message",
+    "pages/detatl/detatl_spellGroup",
+    "pages/detatl/play_all",
+    "pages/posting/applyRefund",
+    "pages/posting/exitActivity",
+    "pages/nearby/withdrawal_list",
+    "pages/nearby/activity_management",
+    "pages/posting/leave_message ",
     "pages/posting/posting",
     "pages/nearby/index",
     "pages/detatl/detatl_activity",
@@ -22,7 +23,9 @@
     "pages/detatl/detatl_service",
     "pages/posting/historyNegotiation",
     "pages/nearby/message_list",
-    "pages/nearby/withdrawal"
+    "pages/nearby/withdrawal",
+    "pages/nearby/play_management",
+    "pages/nearby/change_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
