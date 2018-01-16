@@ -41,7 +41,7 @@
                   <view>{{Jitem.time}}</view>
                 </view>
                 <view class='money'>
-                  <navigator wx:if="{{Jitem.type === 0}}">
+                  <navigator wx:if="{{Jitem.type === 0}}" url='/pages/posting/posting_order'>
                     <view>付款</view>
                   </navigator>
                   <navigator wx:elif="{{Jitem.type === 1}}" url="/pages/posting/applyRefund">
