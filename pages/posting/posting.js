@@ -1,13 +1,5 @@
 Page({
   data: {
-    project: {
-      cover: '/public/images/3@2x.png',
-      title: '雪色浪漫 滑雪 看冰河雾松',
-      setout: '广州出发',
-      time: '06/18至06/22',
-      originalprice: '299',
-      price: '199'
-    },
     winHeight: 0,
     currentTab: 0,
     seatHeight: 35,
@@ -26,6 +18,52 @@ Page({
       },
       {
         title: '售后'
+      }
+    ], projectlist:[
+      {
+        cover: '/public/images/3@2x.png',
+        title: '雪色浪漫 滑雪 看冰河雾松',
+        setout: '广州出发',
+        time: '06/18至06/22',
+        originalprice: '299',
+        price: '199',
+        type:0 //0->待付款 1-> 已付款 2->待成团 3->售后 4->取消
+      },
+      {
+        cover: '/public/images/3@2x.png',
+        title: '雪色浪漫 滑雪 看冰河雾松',
+        setout: '广州出发',
+        time: '06/18至06/22',
+        originalprice: '299',
+        price: '199',
+        type: 1
+      },
+      {
+        cover: '/public/images/3@2x.png',
+        title: '雪色浪漫 滑雪 看冰河雾松',
+        setout: '广州出发',
+        time: '06/18至06/22',
+        originalprice: '299',
+        price: '199',
+        type: 2
+      },
+      {
+        cover: '/public/images/3@2x.png',
+        title: '雪色浪漫 滑雪 看冰河雾松',
+        setout: '广州出发',
+        time: '06/18至06/22',
+        originalprice: '299',
+        price: '199',
+        type: 3
+      },
+      {
+        cover: '/public/images/3@2x.png',
+        title: '雪色浪漫 滑雪 看冰河雾松',
+        setout: '广州出发',
+        time: '06/18至06/22',
+        originalprice: '299',
+        price: '199',
+        type: 4
       }
     ]
   },
