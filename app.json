@@ -1,13 +1,14 @@
 {
   "pages": [
+      "pages/nearby/activity_management",
+    "pages/nearby/registration_information",
     "pages/index/index",
+        "pages/nearby/withdrawal_list",
     "pages/posting/exitActivity",
     "pages/posting/applyRefund",
     "pages/detatl/play_all",
-    "pages/nearby/registration_information",
     "pages/detatl/detatl_spellGroup",
     "pages/nearby/message",
-    "pages/nearby/activity_management",
     "pages/nearby/activity",
     "pages/posting/posting",
     "pages/nearby/index",
@@ -19,7 +20,9 @@
     "pages/location/index",
     "pages/posting/posting_refund",
     "pages/detatl/detatl_service",
-    "pages/posting/historyNegotiation"
+    "pages/posting/historyNegotiation",
+    "pages/nearby/message_list",
+    "pages/nearby/withdrawal"
   ],
   "window": {
     "backgroundTextStyle": "light",

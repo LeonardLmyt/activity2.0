@@ -1,0 +1,10 @@
+.account{width:100%;height: 175rpx;border-top: 20rpx solid #f7f8fd;border-bottom: 20rpx solid #f7f8fd; box-sizing:  border-box;-webkit-box-sizing:   border-box;padding: 28rpx 0 25rpx 40rpx;font-size: 28rpx;color: #888;}
+.account :nth-child(2){font-size: 32rpx;color: #333;margin-top: 8rpx;}
+.meny{width: 100%;height: auto;margin-left: 40rpx;border-bottom: 2rpx solid #f7f8fd;}
+.meny_play{padding: 40rpx 0 40rpx 0;font-size: 28rpx;color: #888;}
+.input{-webkit-box-sizing:  border-box;box-sizing:  border-box;padding-bottom:  30rpx;font-size: 64rpx;color: #333;
+}
+.input input{height: 80rpx;line-height: 80rpx;}
+.all_meny{display: -webkit-box;display: box;box-sizing:  border-box;-webkit-box-sizing:  border-box;padding: 58rpx 0 60rpx 40rpx;font-size: 30rpx;color: #333;}
+.all_meny :nth-child(2){color: #5488fd}
+button{background:  #558ffd;color: #fff;font-size: 34rpx;width: 690rpx;height: 88rpx;}

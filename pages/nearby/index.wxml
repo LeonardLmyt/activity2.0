@@ -38,7 +38,7 @@
 
 
 </navigator>
-<view class='list'>
+<navigator class='list' url='/pages/nearby/withdrawal_list'>
 <view class='information'>
 <image src='/public/images/icon_Withdrawals.png '></image>
 <view>提现</view>
@@ -46,7 +46,7 @@
 </view>
 
 
-</view>
+</navigator>
 
 
 

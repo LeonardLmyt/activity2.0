@@ -1,0 +1,38 @@
+<view class='big_warp'>
+<view class='big_meny'>
+<view>8840.22</view>
+<view>可提现金额</view>
+</view>
+<navigator url='/pages/nearby/withdrawal' class='name_list'>
+<view class='name_left'>
+<image src='/public/images/user_64X64.png '></image>
+<view>摄影是摄影是摄影是摄影是</view>
+</view>
+<view class='name_right'>
+<view>提现</view>
+<image src='/public/images/sqtk_icon_More.png '></image>
+</view>
+</navigator>
+<view class='record'>提现记录</view>
+<view class='into'>
+<view class='into_weact'>
+<view>微信转入</view>
+<view>12/19 03:21</view>
+</view>
+<view class='meny'>+500</view>
+</view>
+<view class='into'>
+<view class='into_weact'>
+<view>微信转入</view>
+<view>12/19 03:21</view>
+</view>
+<view class='meny'>+500</view>
+</view>
+<view class='into'>
+<view class='into_weact'>
+<view>微信转入</view>
+<view>12/19 03:21</view>
+</view>
+<view class='meny'>+500</view>
+</view>
+</view>

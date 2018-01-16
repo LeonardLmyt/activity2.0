@@ -1,0 +1,5 @@
+.big_warp{height: auto;margin-left: 30rpx;}
+.title{border-bottom: 1rpx solid #e7e7e7;display: -webkit-box;display: box;-webkit-box-sizing:  border-box;box-sizing:  border-box;padding: 40rpx 34rpx 26rpx 0;}
+.title :nth-child(1){-webkit-box-flex: 1.0;box-flex: 1.0;font-size: 28rpx;color: #333;}
+.title :nth-child(2){font-size: 24rpx;color: #aaa; }
+.content{font-size: 28rpx;color: #444;line-height: 46rpx;padding: 33rpx 34rpx 0 0;box-sizing:  border-box;-webkit-box-sizing:  border-box;}

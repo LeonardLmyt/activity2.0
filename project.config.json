@@ -23,6 +23,30 @@
 					"name": "历史协商",
 					"pathName": "pages/posting/historyNegotiation",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息详情",
+					"pathName": "pages/nearby/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息详情",
+					"pathName": "pages/nearby/message_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/nearby/withdrawal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现详情",
+					"pathName": "pages/nearby/withdrawal",
+					"query": ""
 				}
 			]
 		},
