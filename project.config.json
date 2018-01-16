@@ -31,6 +31,12 @@
 					"name": "定位",
 					"pathName": "pages/location/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "detatl",
+					"pathName": "pages/detatl/detatl",
+					"query": ""
 				}
 			]
 		}

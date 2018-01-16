@@ -71,7 +71,7 @@ Page({
       pn = e.touches[0],
       lh = t.data.reckon.lh,
       nlh = t.data.reckon.nlh,
-      th = t.data.reckon.th,
+      th = t.data.reckon. th,
       n = t.data.letter[Math.floor((pn.pageY - th) / nlh)].l
     return n
   }

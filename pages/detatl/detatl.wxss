@@ -14,8 +14,8 @@
 .list{display: -webkit-box;display: box;padding:  0 0 0 30rpx; border-top: 1rpx solid #f2f2f2;border-bottom: 10rpx solid #F7F8FB;font-family: PingFang-SC-Bold}   
 .list_name{font-size: 28rpx;color: #333;line-height: 106rpx;font-family: pingFang-SC-Medium;margin-left: 16rpx}
 .information{display: -webkit-box;display: box;box-sizing:border-box;-webkit-box-sizing: border-box;width: 100%;height: 224rpx}
-.ingotmation_left{width: 25%;}
-.information_right{display: -webkit-box;display: box;-webkit-box-flex: 1.0;box-flex: 1.0;-webkit-box-pack: justify;box-pack: justify;-webkit-box-orient: vertical;box-orient: vertical;margin: 33rpx 30rpx;}
+.ingotmation_left{width: 30%;}
+.information_right{display: -webkit-box;display: box;-webkit-box-flex: 1.0;box-flex: 1.0;-webkit-box-pack: justify;box-pack: justify;-webkit-box-orient: vertical;box-orient: vertical;margin: 33rpx 0 33rpx 30rpx;}
 .information_people{font-size: 28rpx;color: #333;font-family: pingFang-SC-Medium;}
 .information_people text{color: #888;font-size: 28rpx;margin-left: 36rpx}
 .eventDetails{width: 100%;height: 92rpx;background: #f7f8fb;display: -webkit-box;display: box;}
@@ -38,3 +38,5 @@
 .next_sub:nth-child(4) view text{color: white;font-size: 30rpx}
 .all{font-size: 30rpx !important;color: white !important}
 .rich{display: -webkit-box;display: box;width: 200rpx;height:200rpx;}
+
+.canvas{width: 200rpx;height: 200rpx;}

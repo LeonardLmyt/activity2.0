@@ -1,6 +1,5 @@
 <view class='big_rap'>
   <view class='title_img'>
-
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper" indicator-dots='{{true}}'>
       <block wx:for="{{imgUrls}}">
         <swiper-item>
@@ -17,13 +16,11 @@
         <text>￥</text> {{meny}}
       </view>
     </view>
-
   </view>
   <view class='spell_group'>
     <view class='spell'>{{spell}}</view>
     <view class='point'>{{point}}</view>
     <view class='people'>{{people}}</view>
-
   </view>
   <view class='list'>
     <view class='list_img'>
@@ -31,7 +28,6 @@
     </view>
     <view class='list_name'>{{list_name}}</view>
   </view>
-
   <view class='information'>
     <view class='information_right'>
       <view class='information_people'>
@@ -43,17 +39,14 @@
         {{out}}
         <text>{{time}}</text>
       </view>
-
-
-
       <view class='information_people'>
         {{collection}}
         <text>{{place}}</text>
       </view>
     </view>
     <view class='ingotmation_left'>
+      <canvas canvas-id='progress' class="canvas"></canvas>
     </view>
-
   </view>
   <view class='eventDetails'>
     <image src='/public/images/icon_activity.png '></image>
@@ -81,15 +74,11 @@
       </view>
       <view class='all'>一起报名</view>
     </navigator>
-    
     <navigator class='next_sub' url='/pages/detatl/detatl_activity'>
       <view>￥
         <text>299</text>
       </view>
       <view class='all'>单独报名</view>
     </navigator>
-
   </view>
-
-
 </view>
