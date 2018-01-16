@@ -5,7 +5,7 @@ page{background-color:#f7f8fb;}
 .content_sub_left image{width: 58rpx;height: 58rpx;border-radius:50%;-webkit-border-radius:50%;}
 .content_sub_right{-webkit-box-flex: 1.0;box-flex: 1.0;}
 .name{width: 100%;overflow:hidden;color:#666666;font-size: 28rpx;}
-.found{display: inline-block;background-color: #ffe8de;border-radius: 4rpx;-webkit-border-radius: 4rpx;width: 160rpx;text-align: center;line-height: 32rpx;padding: 8rpx 10rpx;color: #ff581e;margin-left: 15rpx;}
+.found{display: inline-block;background-color: #ffe8de;border-radius: 4rpx;-webkit-border-radius: 4rpx;text-align: center;line-height: 32rpx;padding: 8rpx 10rpx;color: #ff581e;margin-left: 15rpx;font-size: 30rpx;}
 .time{color: #bbbbbb;font-size: 22rpx;padding: 14rpx 0 25rpx 0;}
 .buy{width: 100%;overflow:hidden;font-size: 30rpx;}
 .buy view{width: 100%;overflow:hidden;line-height: 50rpx;color:#333;}
