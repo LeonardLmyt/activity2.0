@@ -61,6 +61,6 @@
 <view class="button">
   <view class="button_sub">
     <button>联系卖家</button>
-    <button>我要留言</button>
+    <button bindtap='message'>我要留言</button>
   </view>
 </view>
