@@ -1,66 +1,34 @@
-// pages/nearby/message.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    message: [
+      {
+        name: '张三',
+        img:'/public/images/bmgl_uesr_88X88_02.png',
+        time:'10/01/01',
+        content:'没有更好的套餐',
+        type:0 //0未读 1已读
+      },
+      {
+        name: '张三',
+        img: '/public/images/bmgl_uesr_88X88_02.png',
+        time: '10/01/01',
+        content: '没有更好的套餐',
+        type: 0 
+      },
+      {
+        name: '张三',
+        img: '/public/images/icon_System message.png',
+        time: '10/01/01',
+        content: '没有更好的套餐',
+        type: 1 
+      },
+      {
+        name: '张三',
+        img: '/public/images/icon_System message.png',
+        time: '10/01/01',
+        content: '没有更好的套餐',
+        type: 1 
+      }
+    ]
   }
 })

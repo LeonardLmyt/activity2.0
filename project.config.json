@@ -10,7 +10,7 @@
 	"projectname": "activity2.0--%E5%BC%80%E5%8F%91%E7%89%88",
 	"condition": {
 		"weapp": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -57,29 +57,6 @@
 		"conversation": {
 			"current": -1,
 			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "detatl_activity",
-					"pathName": "pages/detatl/detatl_activity",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "定位",
-					"pathName": "pages/location/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "detatl",
-					"pathName": "pages/detatl/detatl",
-					"query": ""
-				}
-			]
 		}
 	}
 }

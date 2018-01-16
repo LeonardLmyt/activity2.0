@@ -1,355 +1,54 @@
-
 <view class="nav">
-    <view wx:for="{{tab}}" class='nav_sub {{currentTab == index ? "nav_ok" : ""}}' data-current="{{index}}" bindtap='tabFun'>
+  <view wx:for="{{tab}}" wx:key class='nav_sub {{currentTab == index ? "nav_ok" : ""}}' data-current="{{index}}" bindtap='tabFun'>
     {{item.title}}
-    </view>
+  </view>
 </view>
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
-    <swiper-item>  
-      <scroll-view scroll-y="{{true}}" class="content"  style="height:{{winHeight}}px">
-  <view class='big_warp'>
-  <view class='payment'>
-  <view>待付款</view>
-  </view>
-  <view class='big_content'>
- <navigator class='project' url='/pages/posting/posting_order'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>  
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">
+  <swiper-item wx:for="{{tab}}" wx:for-index="index" wx:for-item="item" wx:key>
+    <scroll-view scroll-y="{{true}}" style="height:{{winHeight}}px">
+      <view class="content" wx:if="{{!projectlist.length}}">
+        <view class='my_last'>
+          <image src='/public/images/icon_per_No content.png '></image>
         </view>
-      
+        <view class='nocontent'>你没有发表过任何东西噢！</view>
       </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
-        <view class='money'>
-          <view>付款</view>
-       
+      <view wx:else>
+        <view class='big_warp' wx:for="{{projectlist}}" wx:for-index="Jindex" wx:for-item="Jitem" wx:key>
+          <view class='payment'>
+            <view wx:if="{{Jitem.type === 0}}">待付款</view>
+            <view wx:elif="{{Jitem.type === 1}}">已付款</view>
+            <view wx:elif="{{Jitem.type === 2}}">待成团</view>
+            <view wx:elif="{{Jitem.type === 3}}">售后</view>
+            <view wx:elif="{{Jitem.type === 4}}" class="gray">取消</view>
+          </view>
+          <navigator class='project' url='/pages/posting/posting_order'>
+            <view class='project_img'>
+              <image src='{{Jitem.cover}}'></image>
+            </view>
+            <view class='project_content'>
+              <view class='project_title'>{{Jitem.title}}</view>
+              <view class='place'>
+                <view class='all'>
+                  <image src='/public/images/icon_Location_02.png'></image>
+                  <view>{{Jitem.setout}}</view>
+                </view>
+              </view>
+              <view class='place'>
+                <view class='all'>
+                  <image src='/public/images/icon_time_02.png'></image>
+                  <view>{{Jitem.time}}</view>
+                </view>
+                <view class='money'>
+                  <view wx:if="{{Jitem.type === 0}}">付款</view>
+                  <view wx:elif="{{Jitem.type === 1}}">申请退款</view>
+                </view>
+              </view>
+            </view>
+          </navigator>
         </view>
       </view>
-    </view>
-  </navigator>
-    <view class='payment'>
-  <view>已付款</view>
-  </view>
-  <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
- 
-      </view>
-    </view>
-  </view>
-  <view class='payment'>
-  <view>待成团</view>
-  </view>
-  <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
- 
-      </view>
-    </view>
-  </view>
-
-  <view class='payment'>
-  <view style='color:#bbb;'>已退款</view>
-  </view>
-  <navigator class='project' url='/pages/posting/posting_refund'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
- 
-      </view>
-    </view>
-  </navigator>
-  <view class='payment'>
-  <view>退款中</view>
-  </view>
-  <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
- 
-      </view>
-    </view>
-  </view>
-  <view class='payment'>
-  <view style='color:#bbb;'>已取消</view>
-  </view>
-  <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
- 
-      </view>
-    </view>
-  </view>
-
-
-
-
-
-
-  
-  </view>
-
-
-
-  
-  </view>
-
-
-
     </scroll-view>
-    </swiper-item>  
-    <swiper-item>  
-      <scroll-view class="content" style="height:{{winHeight}}px">
-  <view class='big_warp'>
-  <view class='payment'>
-  <view>待付款</view>
-  </view>
-  <view class='big_content'>
- <navigator class='project' url='/pages/posting/posting_order'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>  
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
-        <view class='money'>
-          <view>付款</view>
-       
-        </view>
-      </view>
-    </view>
-  </navigator>
-     </view>
-    </view>
-
-    </scroll-view>
-    </swiper-item>  
-    <swiper-item>  
-      <scroll-view class="content" style="height:{{winHeight}}px">
-    <view class='big_warp'>
-  <view class='payment'>
-  <view>待付款</view>
-  </view>
-  <view class='big_content'>
- <navigator class='project' url=''>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>  
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
-        <view class='money'>
-          <view>已付款</view>
-       
-        </view>
-      </view>
-    </view>
-  </navigator>
-     </view>
-    </view>
-
-
-    
-       </scroll-view>
-    </swiper-item>  
-       <swiper-item>  
-      <scroll-view class="content" style="height:{{winHeight}}px">
-  <view class='big_warp'>
-  <view class='payment'>
-  <view>待付款</view>
-  </view>
-  <view class='big_content'>
- <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
-        <navigator class='money' url="/pages/posting/applyRefund">
-          <view>申请退款</view>
-       
-        </navigator>
-      </view>
-    </view>
-  </view>
- 
-
-
-
-
-
-  
-  </view>
-
-
-
-  
-  </view>
-
-    </scroll-view>
-    </swiper-item> 
-       <swiper-item>  
-      <scroll-view class="content" style="height:{{winHeight}}px">
- <view class='big_warp'>
-  <view class='payment'>
-  <view>待付款</view>
-  </view>
-  <view class='big_content'>
- <view class='project' url='/pages/detatl/play_all'>
-    <view class='project_img'>
-      <image src='{{project.cover}}'></image>
-    </view>
-    <view class='project_content'>
-      <view class='project_title'>{{project.title}}</view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_Location_02.png'></image>
-          <view>{{project.setout}}</view>
-        </view>
-      
-      </view>
-      <view class='place'>
-        <view class='all'>
-          <image src='/public/images/icon_time_02.png'></image>
-          <view>{{project.time}}</view>
-        </view>
-     
-      </view>
-    </view>
-  </view>
- 
-
-
-
-
-
-  
-  </view>
-
-
-
-  
-  </view>
-    </scroll-view>
-    </swiper-item> 
-
+  </swiper-item>
 </swiper>
 <import src="/public/public.wxml" />
 <template is="footer" />
