@@ -32,11 +32,50 @@ Page({
 
   },
   onReady: function () {
-    let ctx = wx.createContext();
-    // Draw coordinates
-    ctx.arc(50, 50, 10, 0, 2 * Math.PI)
-    ctx.setFillStyle('#EEEEEE')
-    ctx.fill()
+    let t = this
+    t.drawCanvas(90) //参数：进度
+  },
+  drawCanvas: function (num) { //生成进度算法
+    const ctx = wx.createCanvasContext(),
+      grd = ctx.createLinearGradient(30, 10, 120, 10)
+    ctx.beginPath() //绘制灰色圆弧
+    ctx.setLineWidth(5)
+    ctx.arc(40, 40, 30, 0, Math.PI * 2, false)
+    ctx.setStrokeStyle("#dddddd")
+    ctx.stroke()
+    ctx.closePath()
+
+    ctx.beginPath() //绘制剩余数量
+    ctx.setFontSize(20)
+    ctx.setTextAlign('center')
+    ctx.setFillStyle("#61666d")
+    ctx.fillText(100 - num, 40, 40)
+    ctx.closePath()
+
+    ctx.beginPath() //绘制剩余
+    ctx.setFontSize(10)
+    ctx.setTextAlign('center')
+    ctx.setFillStyle("#949ab0")
+    ctx.fillText('剩余', 40, 54)
+    ctx.closePath()
+
+    grd.addColorStop(0, '#93D5FF')  //绘制环形渐变
+    grd.addColorStop(0.16, '#97D7FF')
+    grd.addColorStop(0.33, '#7AC5FF')
+    grd.addColorStop(0.5, '#6989fb')
+    grd.addColorStop(0.66, '#577bfd')
+    grd.addColorStop(0.83, '#456dff')
+    grd.addColorStop(1, '#355ffb')
+
+    ctx.beginPath() //绘制环形
+    ctx.arc(40, 40, 30, 1.5 * Math.PI, ((100 - num) * 0.02 + ((100 - num) < 25 ? 1.5 : -0.5)) * Math.PI)
+    ctx.setLineWidth(5)
+    ctx.setLineCap('round')
+    ctx.setStrokeStyle(grd)
+    ctx.setShadow(1, 1, 5, '#93D5FF')
+    ctx.stroke()
+    ctx.closePath()
+
     wx.drawCanvas({
       canvasId: 'progress',
       actions: ctx.getActions()
