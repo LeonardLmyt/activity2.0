@@ -1,0 +1,36 @@
+<view class='big_warp'>
+<view class='cotent'>
+ <view class='project' url='/pages/detatl/play_all'>
+    <view class='project_img'>
+      <image src='{{project.cover}}'></image>
+    </view>
+    <view class='project_content'>
+      <view class='project_title'>{{project.title}}</view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_Location_02.png'></image>
+          <view>{{project.setout}}</view>
+        </view>
+        <view class='meny'>
+          <view>￥</view>
+          {{project.originalprice}}</view>
+      </view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_time_02.png'></image>
+          <view>{{project.time}}</view>
+        </view>
+        <view class='money'>
+          <view>¥</view>
+          {{project.price}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>
+
+
+</view>

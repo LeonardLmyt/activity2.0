@@ -1,12 +1,25 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/location/index",
-    "pages/detatl/detatl_activity",
+    "pages/posting/exitActivity",
+    "pages/posting/applyRefund",
     "pages/detatl/play_all",
-    "pages/detatl/detatl",
+    "pages/nearby/registration_information",
+    "pages/detatl/detatl_spellGroup",
+    "pages/nearby/message",
+    "pages/nearby/activity_management",
+    "pages/nearby/activity",
+    "pages/posting/posting",
     "pages/nearby/index",
-    "pages/posting/posting"
+    "pages/detatl/detatl_activity",
+    "pages/detatl/detatl_information",
+    "pages/detatl/detatl",
+    "pages/detatl/detatl_activityTwo",
+    "pages/posting/posting_order",
+    "pages/location/index",
+    "pages/posting/posting_refund",
+    "pages/detatl/detatl_service",
+    "pages/posting/historyNegotiation"
   ],
   "window": {
     "backgroundTextStyle": "light",

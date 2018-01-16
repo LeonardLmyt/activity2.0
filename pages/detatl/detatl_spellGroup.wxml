@@ -1,0 +1,90 @@
+<view class='project' >
+    <view class='project_img'>
+      <image src='{{project.cover}}'></image>
+    </view>
+    <view class='project_content'>
+      <view class='project_title'>{{project.title}}</view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_Location_02.png'></image>
+          <view>{{project.setout}}</view>
+        </view>
+        <view class='meny'>
+          <view>￥</view>
+          {{project.originalprice}}</view>
+      </view>
+      <view class='place'>
+        <view class='all'>
+          <image src='/public/images/icon_time_02.png'></image>
+          <view>{{project.time}}</view>
+        </view>
+        <view class='money'>
+          <view>¥</view>
+          {{project.price}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='midden'>
+  <view class='headOf_the'>
+  <view class='headOf_img'>
+  <image src='/public/images/bmgl_uesr_88X88_01.png  '>
+  
+  </image>
+
+  </view>
+  <view class='new_img'>
+  <image src='/public/images/Members.png '></image>
+  </view>
+  
+  </view>
+  <view class='title'>
+  <view>还差</view>
+  <view>1</view>
+  <view>人, </view>
+  <view>05:59:00 后结束</view>
+  </view>
+  <button class='pleat'>邀请好友拼团</button> 
+  </view>
+  <view class='list_information'>
+  <view class='fierst'>
+  <view class='name'>
+  <view>布欧</view>
+  <image src='/public/images/icon_man.png '></image>
+  <view>13725175911</view>
+  </view>
+  <view class='id'>
+  <view>身份证</view>
+  <view>4418271996022215224</view>
+  </view>
+  </view>
+    </view>
+    <view class='total_amount'>
+    <view>共 1 人，合计</view>
+    <view>￥199.00</view>
+    </view>
+    <view class='next_conten'>
+    <view class='big_next'>
+    <view class='order'>
+    <view>订单状态</view>
+    <view>已付款</view>
+    </view>
+      <view class='order'>
+    <view>订单编号</view>
+    <view>22564451231241</view>
+    </view>
+      <view class='order'>
+    <view>支付时间</view>
+    <view>2017/12/22  13:22</view>
+    </view>
+      <view class='order'>
+    <view>交易单号</view>
+    <view>44545221221256555454</view>
+    </view>
+    
+    
+    </view>
+    
+    
+    
+    </view>

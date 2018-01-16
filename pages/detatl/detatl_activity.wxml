@@ -1,5 +1,5 @@
 <view class="content">
-  <navigator class='project' url='/pages/detatl/play_all'>
+  <view class='project' url='/pages/detatl/play_all'>
     <view class='project_img'>
       <image src='{{project.cover}}'></image>
     </view>
@@ -25,7 +25,7 @@
         </view>
       </view>
     </view>
-  </navigator>
+  </view>
   <view class='details'>
     <view class='sign_list'>报名列表</view>
     <view class="details_main">
@@ -64,9 +64,9 @@
     总费用：
     <text>￥299.00</text>
   </view>
-  <view class="pay_message_rigth">
+  <navigator class="pay_message_rigth" url='/pages/detatl/play_all'>
     <button bindtap='submit'>支付</button>
-  </view>
+  </navigator>
 </view>
 
 <view class="mask {{toggleMask.show ? toggleMask.maskbgClass : ''}}"></view>
@@ -75,10 +75,10 @@
     <view class="close" bindtap='toggleMask' data-show='{{toggleMask.show}}'>取消</view>
     <view class="ok" bindtap='toggleMask' data-show='{{toggleMask.show}}'>确定</view>
   </view>
-  <view class="mask_add">
+  <navigator class="mask_add" url='/pages/detatl/detatl_information'>
     <image src='/public/images/icon_tianjia.png'></image>
     添加人员
-  </view>
+  </navigator>
   <scroll-view scroll-y="{{true}}" style='height:346rpx' class="mask_details_main">
     <view class="mask_details_sub" wx:for="{{initialuserdata}}">
       <view class='mask_left'>
