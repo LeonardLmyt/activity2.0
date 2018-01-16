@@ -1,2 +1,7 @@
-<!--pages/posting/leave_message.wxml-->
-<text>pages/posting/leave_message.wxml</text>
+
+<!-- <input placeholder='有什么问题可以给商家留言哦~'></input> -->
+<view class='warp'>
+<textarea placeholder=' 有什么问题可以给商家留言哦~'></textarea>
+</view>
+
+<button>确定</button>

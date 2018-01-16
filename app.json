@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+      "pages/posting/leave_message",
     "pages/nearby/registration_information",
     "pages/nearby/activity",
     "pages/nearby/message",
@@ -10,7 +11,6 @@
     "pages/posting/exitActivity",
     "pages/nearby/withdrawal_list",
     "pages/nearby/activity_management",
-    "pages/posting/leave_message",
     "pages/posting/posting",
     "pages/nearby/index",
     "pages/detatl/detatl_activity",
