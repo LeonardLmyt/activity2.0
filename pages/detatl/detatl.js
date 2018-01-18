@@ -33,7 +33,7 @@ Page({
   },
   onReady: function () {
     let t = this
-    t.drawCanvas(10) //参数：进度
+    t.drawCanvas(20) //参数：进度
   },
   drawCanvas: function (num) { //生成进度算法
     const ctx = wx.createCanvasContext(),
@@ -49,7 +49,7 @@ Page({
     ctx.setFontSize(20)
     ctx.setTextAlign('center')
     ctx.setFillStyle("#61666d")
-    ctx.fillText(100 - num, 40, 40)
+    ctx.fillText(num, 40, 40)
     ctx.closePath()
 
     ctx.beginPath() //绘制剩余
@@ -68,7 +68,7 @@ Page({
     grd.addColorStop(1, '#355ffb')
 
     ctx.beginPath() //绘制环形
-    ctx.arc(40, 40, 30, 1.5 * Math.PI, ((100 - num) * 0.02 + ((100 - num) < 25 ? 1.5 : -0.5)) * Math.PI)
+    ctx.arc(40, 40, 30, 1.5 * Math.PI, (num * 0.02 + (num < 25 ? 1.5 : -0.5)) * Math.PI)
     ctx.setLineWidth(5)
     ctx.setLineCap('round')
     ctx.setStrokeStyle(grd)
