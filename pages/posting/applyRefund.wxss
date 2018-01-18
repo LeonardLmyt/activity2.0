@@ -37,3 +37,13 @@ display:table-cell;padding: 0 0 0 30rpx}
 .al_instructions{padding: 33rpx 0 0 30rpx;}
 .al_instructions :nth-child(1){font-size: 30rpx;color: black;font-weight: bold}
 .button_meny{position: fixed;left: 0;bottom: 0;width: 100%;background: #548FFB;color: #fff;font-size: 34rpx;border-radius: 0;}
+
+
+/*mask*/
+.mask{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.5);transform: translateX(130%) rotate(20deg);-webkit-transform: translateX(130%) rotate(20deg);transition: all 0.5s;-webkit-transition: all 0.5s;}
+.mask_content{position: fixed;left: 0;right: 0;bottom: 0;background-color: #ffffff;z-index: 100;padding-bottom: 90rpx;transform:translateY(100%);-webkit-transform:translateY(100%);transition: all 0.5s;-webkit-transition: all 0.5s;}
+.mask_content_head{display: -webkit-box;display: box;-webkit-box-pack:justify;box-pack:justify;}
+.close,.ok{padding: 30rpx;font-size: 28rpx;color: #888888;}
+.ok{color: #444444;}
+.mask_animation{transform:translateY(0);-webkit-transform:translateY(0);}
+.maskbg_animation{transform:translateX(0) rotate(0deg);-webkit-transform:translateX(0) rotate(0deg);}

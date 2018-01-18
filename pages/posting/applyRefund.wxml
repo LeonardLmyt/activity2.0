@@ -55,11 +55,11 @@
   <view>退款金额</view>
   <view>￥299:00</view>
 </view>
-<view class='refund_reason'>
+<view class='refund_reason' bindtap='toggleMask' data-show='{{toggleMask.show}}'>
   <view class='refund'>退款原因</view>
   <view class='choose'>
     <view>请选择</view>
-    <image src='/public/images/icon_More.png '></image>
+    <image src='/public/images/icon_More.png'></image>
   </view>
 </view>
 <view class='al_instructions'>
@@ -73,3 +73,19 @@
 <navigator url='/pages/posting/exitActivity'>
   <button class='button_meny'>申请退款</button>
 </navigator>
+
+
+
+<view class="mask {{toggleMask.show ? toggleMask.maskbgClass : ''}}"></view>
+<view class="mask_content {{toggleMask.show ? toggleMask.maskClass : ''}}">
+  <view class="mask_content_head">
+    <view class="close" bindtap='toggleMask' data-show='{{toggleMask.show}}'>取消</view>
+    <view class="ok" bindtap='toggleMask' data-show='{{toggleMask.show}}'>确定</view>
+  </view>
+  <view class="mask_content">
+      <view class="mask_content_sub">
+      <view class="mask_content_sub_left"></view>
+      <view class="mask_content_sub_right"></view>
+      </view>
+  </view>
+</view>
