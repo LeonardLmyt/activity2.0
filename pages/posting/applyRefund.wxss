@@ -47,3 +47,8 @@ display:table-cell;padding: 0 0 0 30rpx}
 .ok{color: #444444;}
 .mask_animation{transform:translateY(0);-webkit-transform:translateY(0);}
 .maskbg_animation{transform:translateX(0) rotate(0deg);-webkit-transform:translateX(0) rotate(0deg);}
+
+.list{width: 100%;height: 88rpx;box-sizing:  border-box;-webkit-box-sizing:  border-box;padding: 25rpx 30rpx;display: box;
+display: -webkit-box;border-top: 2rpx solid  #e7e7e7}
+.list image{width: 44rpx;height: 44rpx;}
+.list :nth-child(1){-webkit-box-flex: 1.0;box-flex: 1.0;font-size: 30rpx;color: #011111;}

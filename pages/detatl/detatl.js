@@ -58,7 +58,7 @@ Page({
     ctx.setFontSize(10)
     ctx.setTextAlign('center')
     ctx.setFillStyle("#949ab0")
-    ctx.fillText('剩余', 40, 54)
+    ctx.fillText('剩余', 40, 54)  
     ctx.closePath()
 
     grd.addColorStop(0, '#93D5FF')  //绘制环形渐变
