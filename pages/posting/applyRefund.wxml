@@ -61,7 +61,7 @@
 
   <view class='refund'>退款原因</view>
   <view class='choose'>
-    <view>请选择</view>
+    <view>{{!checkmess ? '请选择' : checkmess }}</view>
     <image src='/public/images/icon_More.png'></image>
   </view>
 </view>
@@ -83,10 +83,17 @@
     <view class="close" bindtap='toggleMask' data-show='{{toggleMask.show}}'>取消</view>
     <view class="ok" bindtap='toggleMask' data-show='{{toggleMask.show}}'>确定</view>
   </view>
+  <view class='list' wx:for="{{errormessage}}">
+    <view>{{item.content}}</view>
+    <view class="mask_right" bindtap='toggleUser' data-index='{{index}}'>
+      <image src='/public/images/sel.png' wx:if="{{item.check}}"></image>
+      <image src='/public/images/nor.png' wx:else></image>
+    </view>
+  </view>
   <view class="mask_content">
-      <view class="mask_content_sub">
+    <view class="mask_content_sub">
       <view class="mask_content_sub_left"></view>
       <view class="mask_content_sub_right"></view>
-      </view>
+    </view>
   </view>
 </view>

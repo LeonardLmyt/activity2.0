@@ -10,7 +10,7 @@ Page({
     },
     checked: false,
     toggleMask: {
-      show: true,
+      show: false,
       maskClass: 'mask_animation',
       maskbgClass: 'maskbg_animation'
     },
@@ -19,49 +19,37 @@ Page({
       check: true
     }, {
       content: '拍错/无法出去了/无法出行',
-      check: true
+      check: false
     },
     {
       content: '商家要求加价',
-      check: true
+      check: false
     },
     {
       content: '行程不成团/商家无法安排',
-      check: true
+      check: false
     },
     {
       content: '商家超时未确定订单',
-      check: true
+      check: false
     },
     {
       content: '需要退差价/没有使用优惠',
-      check: true
+      check: false
     },
     {
       content: '其他',
-      check: true
-    }]
+      check: false
+    }],
+    checkmess:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  submit: {
+    userdata: [],
+    clause: {
+      show: true,
+      false: '/public/images/nor.png',
+      true: '/public/images/sel.png'
+    }
   },
   checked: function (e) {
     let t = this
@@ -73,6 +61,18 @@ Page({
     this.data.toggleMask.show = !e.currentTarget.dataset.show
     this.setData({
       toggleMask: this.data.toggleMask
+    })
+  }, 
+  toggleUser:function(e){
+    let t = this,
+    i = e.currentTarget.dataset.index
+    t.data.errormessage.map((value, index) => { if (index === i) { value.check = true;
+      t.setData({
+        checkmess: value.content
+      })
+     } else { value.check = false}})
+    t.setData({
+      errormessage: t.data.errormessage
     })
   }
 })
