@@ -32,10 +32,12 @@ Page({
 
   },
   onReady: function () {
-    let t = this
-    t.drawCanvas(20) //参数：进度
+    let t = this,
+    all = 500, //总人数
+    already = 400 //已报名
+    t.drawCanvas([Number(already / all) * 100, all - already]) 
   },
-  drawCanvas: function (num) { //生成进度算法
+  drawCanvas: function ([per, num]) { //生成进度算法
     const ctx = wx.createCanvasContext(),
       grd = ctx.createLinearGradient(30, 10, 120, 10)
     ctx.beginPath() //绘制灰色圆弧
@@ -68,7 +70,7 @@ Page({
     grd.addColorStop(1, '#355ffb')
 
     ctx.beginPath() //绘制环形
-    ctx.arc(40, 40, 30, 1.5 * Math.PI, (num * 0.02 + (num < 25 ? 1.5 : -0.5)) * Math.PI)
+    ctx.arc(40, 40, 30, 1.5 * Math.PI, (per * 0.02 + (per < 25 ? 1.5 : -0.5)) * Math.PI)
     ctx.setLineWidth(5)
     ctx.setLineCap('round')
     ctx.setStrokeStyle(grd)
